@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AzureIoTServiceSDKTest"
+             x:Class="AzureIoTServiceSDKTest.MainPage">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="LEDImage" Source="on.png" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center" />
+        <Button x:Name="OnButton" Grid.Row="1" Grid.Column="0" Text="ON" Clicked="OnButton_Clicked" />
+        <Button x:Name="OffButton" Grid.Row="1" Grid.Column="1" Text="OFF" Clicked="OffButton_Clicked" />
+
+    </Grid>
+
+</ContentPage>
