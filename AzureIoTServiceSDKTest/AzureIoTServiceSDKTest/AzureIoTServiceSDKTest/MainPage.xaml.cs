@@ -7,13 +7,13 @@ namespace AzureIoTServiceSDKTest
 {
 	public partial class MainPage : ContentPage
 	{
-        static string connectionString = "HostName=MyIoTHub20180408.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=fXgnUTFZ09VBW6wtoreY3FN6ovKCuh9V6a3KleVvWQc=";
-        static string deviceId = "RaspberryPi2";
-        static string ledOnMethodName = "LED_ON";
-        static string ledOffMethodName = "LED_OFF";
-        static ServiceClient serviceClient;       
+		static string connectionString = "HostName=MyIoTHub20180408.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=fXgnUTFZ09VBW6wtoreY3FN6ovKCuh9V6a3KleVvWQc=";
+		static string deviceId = "RaspberryPi2";
+		static string ledOnMethodName = "LED_ON";
+		static string ledOffMethodName = "LED_OFF";
+		static ServiceClient serviceClient;       
 
-        public MainPage()
+		public MainPage()
 		{
 			InitializeComponent();
             serviceClient = ServiceClient.CreateFromConnectionString(connectionString);
